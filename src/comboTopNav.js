@@ -55,6 +55,10 @@ export function comboTopNav(
   // menu icon container
   const menuIconContainer = document.createElement('div');
   menuIconContainer.className = 'container';
+  menuIconContainer.onclick = () => {
+    menuIconContainer.classList.toggle('change');
+    mobileNav.classList.toggle('visible');
+  };
   topNav.appendChild(menuIconContainer);
 
   const bar1 = document.createElement('div');
