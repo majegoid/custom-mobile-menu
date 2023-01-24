@@ -112,12 +112,23 @@ nav a:hover {
   --background-color-hover: #777;
   --background-color-active: #999;
 
-  display: none;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: -1;
+
+  width: 100%;
 
   font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+
+  transition: 0.4s;
+}
+
+.mobile-dropdown-menu.change {
+  transform: translateY(0%);
+  z-index: -1;
 }
 
 .mobile-dropdown-menu *,
@@ -150,12 +161,6 @@ nav a:hover {
   background-color: var(--background-color-active);
 }
 /* END MOBILE DROPDOWN MENU */
-
-/* UTILITY CLASSES */
-.visible {
-  display: block;
-}
-/* END UTILITY CLASSES */
 
 @media (max-width: 620px) {
   nav ul {

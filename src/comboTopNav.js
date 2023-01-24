@@ -57,7 +57,7 @@ export function comboTopNav(
   menuIconContainer.className = 'container';
   menuIconContainer.onclick = () => {
     menuIconContainer.classList.toggle('change');
-    mobileNav.classList.toggle('visible');
+    mobileNav.classList.toggle('change');
   };
   topNav.appendChild(menuIconContainer);
 
