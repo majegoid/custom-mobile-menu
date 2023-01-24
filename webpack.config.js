@@ -18,7 +18,7 @@ module.exports = {
   target: target, //build for the web with or without backwards compatibility (browserslist)
   entry: {
     index: './src/index.js',
-    createMobileMenu: './src/createMobileMenu.js',
+    comboTopNav: './src/comboTopNav.js',
   },
   output: {
     filename: '[name].js',

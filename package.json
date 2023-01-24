@@ -4,7 +4,7 @@
   "description": "Simple reusable dropdown",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --progress",
     "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
     "build-dev": "webpack",
